@@ -166,7 +166,7 @@ class Logger extends AbstractLogger
      * @param  array  $context The context
      * @return string
      */
-    private function formatMessage($level, $message, $context)
+    protected function formatMessage($level, $message, $context)
     {
         $level = strtoupper($level);
         if (! empty($context)) {
@@ -183,7 +183,7 @@ class Logger extends AbstractLogger
      * 
      * @return string
      */
-    private function getTimestamp()
+    protected function getTimestamp()
     {
         $originalTime = microtime(true);
         $micro = sprintf("%06d", ($originalTime - floor($originalTime)) * 1000000);
@@ -198,7 +198,7 @@ class Logger extends AbstractLogger
      * @param  array $context The Context
      * @return string
      */
-    private function contextToString($context)
+    protected function contextToString($context)
     {
         $export = '';
         foreach ($context as $key => $value) {
@@ -224,7 +224,7 @@ class Logger extends AbstractLogger
      * @param  string $indent What to use as the indent.
      * @return string
      */
-    private function indent($string, $indent = '    ')
+    protected function indent($string, $indent = '    ')
     {
         return $indent.str_replace("\n", "\n".$indent, $string);
     }
