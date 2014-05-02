@@ -1,6 +1,6 @@
 {
-    "name": "katzgrau/klogger",
-    "version": "1.0.0",
+    "name": "flock3/klogger",
+    "version": "2.0.0",
     "description": "A Simple Logging Class",
     "keywords": ["logging"],
     "require": {
@@ -19,7 +19,11 @@
         {
             "name": "Dan Horrigan",
             "email": "dan@dhorrigan.com"
-        }
+        },
+	{
+	    "name": "Thomas Gray",
+	    "email": "tom@osg.me"
+	}
     ],
     "autoload": {
         "psr-4": {
