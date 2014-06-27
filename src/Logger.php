@@ -94,6 +94,8 @@ class Logger extends AbstractLogger
         if ( ! $this->fileHandle) {
             throw new RuntimeException('The file could not be opened. Check permissions.');
         }
+
+        chown($this->logFilePath, $this->defaultPermissions);
     }
 
     /**
