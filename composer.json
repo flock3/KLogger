@@ -1,6 +1,5 @@
 {
     "name": "flock3/klogger",
-    "version": "1.0.2",
     "description": "A Simple Logging Class",
     "keywords": ["logging"],
     "require": {
